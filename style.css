@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+  padding: 40px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+}
+
+/* SECTION */
+section {
+  padding: 80px 10%;
+  border-bottom: 1px solid #222;
+}
+
+h2 {
+  margin-bottom: 40px;
+}
+
+/* ABOUT */
+.about-container {
+  display: flex;
+  gap: 40px;
+}
+
+.about-img {
+  width: 150px;
+  height: 150px;
+  background: #d0cfcf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00e5ff;
+}
+
+/* PROJECTS */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.project-card {
+  border: 1px solid #333;
+  padding: 20px;
+}
+
+.project-card .img {
+  height: 120px;
+  background: #d0cfcf;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+}
