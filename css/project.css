@@ -1,0 +1,17 @@
+#project-name
+{
+
+}
+
+.container
+{
+    display: flex;
+    gap: 40px;
+}
+
+.text
+{
+    line-height: 35px;
+    max-width: 700px;
+    color: #555555;
+}
