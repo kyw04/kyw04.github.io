@@ -1,75 +1,87 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js"></script>
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
-    <h1 class="title">Portfolio</h1>
-    <nav>
-        <a href="#about">ABOUT</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <h1 class="title">Game Programmer<br>Portfolio</h1>
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <!-- ABOUT -->
 <section id="about">
-    <h2>ABOUT</h2>
-    <div class="about-container">
-        <div class="about-img">IMG</div>
-        <div class="about-text">
-            <p></p>
-            <p></p>
-            <p></p>
-        </div>
+  <h2>ABOUT</h2>
+  <div class="about-container">
+    <div>
+      <div class="about-img">IMG</div>
+      <div id="linked-images">
+        <a href="https://github.com/kyw04"><img class="about-linked-img" src="img/github.png" alt="github"></a>
+        <img class="about-linked-img" src="img/mail.png" alt="mail" onclick="CopyEmail()">
+      </div>
     </div>
-    <a href="https://github.com/kyw04">GitHub</a>
-    <img src="img/github.png" alt="">
+    <div class="about-text">
+      <p>사람들에게 즐거움을 전달하고 싶은 개발자입니다.</p>
+      <p>아이디어를 실제로 구현하고, 끊임없이 성장하는 과정 자체를 즐기고 있습니다.</p>
+      <p>그저 게임을 플레이하던 한 명의 유저에서 시작해 직접 콘텐츠를 만들고 싶다는 목표를 가지게 되었고, 간단한 시스템 제작을 통해
+        개발의 재미를 깨달았습니다. 이후 C언어와 Unity를 배우며 프로젝트와 대회, 협업을 통해 더 나은 결과를 만들어가는 과정을 배웠습니다.</p>
+      <p>저는 단순히 게임을 만드는 것을 넘어, 사람들에게 기억에 남는 경험을 제공하는 개발자로 성장하고자 합니다.</p>
+    </div>
+  </div>
 </section>
+<div class="line"></div>
 
 <!-- PROJECTS -->
 <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project-grid">
-
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <div class="img">IMG</div>
-            <p>프로젝트 설명</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Project 2</h3>
-            <div class="img">IMG</div>
-            <p>프로젝트 설명</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Project 3</h3>
-            <div class="img">IMG</div>
-            <p>프로젝트 설명</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Project 4</h3>
-            <div class="img">IMG</div>
-            <p>프로젝트 설명</p>
-        </div>
-
+  <h2>Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <p class="title">Project 1</p>
+      <a href="https://kyw04.github.io/projects/Demath.html"><img src="img/test.png" alt="project-1"></a>
+      <p class="description">
+        국가는 모성의 보호를 위하여 노력하여야 한다. 대통령이 제1항의 기간내에 공포나 재의의 요구를 하지 아니한 때에도 그 법률안은 법률로서 확정된다.
+        국회나 그 위원회의 요구가 있을 때에는 국무총리·국무위원 또는 정부위원은 출석·답변하여야 하며, 국무총리 또는 국무위원이 출석요구를 받은 때에는 국무위원 또는 정부위원으로 하여금 출석·답변하게 할 수 있다.
+      </p>
+      <p class="description">
+        대통령의 임기가 만료되는 때에는 임기만료 70일 내지 40일전에 후임자를 선거한다. 대통령은 제1항과 제2항의 처분 또는 명령을 한 때에는 지체없이 국회에 보고하여 그 승인을 얻어야 한다.
+        근로자는 근로조건의 향상을 위하여 자주적인 단결권·단체교섭권 및 단체행동권을 가진다. 국교는 인정되지 아니하며, 종교와 정치는 분리된다. 국회의원이 회기전에 체포 또는 구금된 때에는 현행범인이 아닌 한 국회의 요구가 있으면 회기중 석방된다.
+        국가는 농지에 관하여 경자유전의 원칙이 달성될 수 있도록 노력하여야 하며, 농지의 소작제도는 금지된다. 대통령은 국민의 보통·평등·직접·비밀선거에 의하여 선출한다.
+      </p>
     </div>
+    <div class="project-card">
+      <p class="title">Project 1</p>
+      <a href="https://github.com/kyw04"><img src="img/test.png" alt="project-1"></a>
+      <p class="description">프로젝트 설명</p>
+    </div>
+    <div class="project-card">
+      <p class="title">Project 1</p>
+      <a href="https://github.com/kyw04"><img src="img/test.png" alt="project-1"></a>
+      <p class="description">프로젝트 설명</p>
+    </div>
+    <div class="project-card">
+      <p class="title">Project 1</p>
+      <a href="https://github.com/kyw04"><img src="img/test.png" alt="project-1"></a>
+      <p class="description">프로젝트 설명</p>
+    </div>
+  </div>
 </section>
+<div class="line"></div>
 
 <!-- CONTACT -->
 <section id="contact">
-    <h2>Contact</h2>
-    <p>dddd93768@gamil.com</p>
-    <p>github.com/kyw04</p>
+  <ul class="contact-link">
+    <li><a href="https://github.com/kyw04">github.com/kyw04</a></li>
+    <li><a href="#contact" id="email" onclick="CopyEmail()">dddd93768@gmail.com</a></li>
+  </ul>
 </section>
 
 </body>
