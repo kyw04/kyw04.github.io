@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-margin-top: 120px;
 }
 
 body
@@ -31,7 +32,17 @@ a
 /* HEADER */
 header
 {
-  padding: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+  background: white;
+  z-index: 1000;
 }
 
 header .title
@@ -44,8 +55,7 @@ header .title
 
 nav
 {
-  margin-top: 20px;
-}
+  margin-top: 20px;}
 
 nav a
 {
@@ -71,6 +81,11 @@ h2
 }
 
 /* ABOUT */
+#about
+{
+  margin-top: 130px;
+}
+
 .about-container
 {
   display: flex;
