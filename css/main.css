@@ -87,21 +87,3 @@
     margin-top: 10px;
     font-size: 14px;
 }
-
-/* CONTACT */
-.contact
-{
-    text-align: center;
-}
-
-.contact-link
-{
-    text-align: center;
-    list-style: none;
-}
-
-.contact-link li
-{
-    padding: 5px;
-    text-decoration: underline;
-}
