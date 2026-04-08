@@ -87,6 +87,11 @@
     transform: scale(1.1);
 }
 
+.project-card:has(img:hover) .title
+{
+    color: black;
+}
+
 .project-card p
 {
     margin-top: 10px;

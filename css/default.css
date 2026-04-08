@@ -85,5 +85,11 @@ h2
 .contact-link li
 {
     padding: 5px;
+    color: #555555;
     text-decoration: underline;
+}
+
+.contact-link li a:hover
+{
+    color: black;
 }
