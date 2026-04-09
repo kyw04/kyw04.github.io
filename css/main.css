@@ -22,7 +22,7 @@
 
 .about-text
 {
-    max-width: 700px;
+    max-width: 1050px;
     color: #555555;
 }
 
@@ -56,13 +56,22 @@
 .project-grid
 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
+@media (max-width: 700px)
+{
+    .project-grid
+    {
+        grid-template-columns: 1fr;
+    }
+}
 .project-card
 {
-    padding: 20px;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 10px;
     color: #555555;
 }
 
@@ -76,10 +85,12 @@
 
 .project-card img
 {
-    width: 325px;
-    height: 175px;
+    width: 100%;
+    max-width: 550px;
+    aspect-ratio: 11 / 6;
     object-fit: cover;
-    margin: 5px auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .project-card img:hover

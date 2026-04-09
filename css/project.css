@@ -15,3 +15,16 @@
     max-width: 700px;
     color: #555555;
 }
+
+.in-game-image
+{
+    width: 384px;
+    height: 216px;
+    object-fit: cover;
+    margin: 5px auto;
+}
+
+img
+{
+    width: 100%;
+}
