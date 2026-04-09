@@ -12,19 +12,34 @@
 .text
 {
     line-height: 35px;
-    max-width: 700px;
     color: #555555;
 }
 
-.in-game-image
+.in-game-img
 {
-    width: 384px;
-    height: 216px;
+    width: 550px;
+    height: 309px;
     object-fit: cover;
     margin: 5px auto;
 }
 
-img
+.sub-img
 {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+li
+{
+    margin-top: 20px;
+    list-style: none;
+}
+
+li p
+{
+    margin-left: 10px;
+    line-height: 1.5;
+    margin-bottom: 8px;
 }
