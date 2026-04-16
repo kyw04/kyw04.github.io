@@ -1,10 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>8 Ball Pool</title>
+    <meta charset="UTF-8">
+    <title>8 Ball Pool</title>
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/default.css">
+    <script src="js/app.js"></script>
 </head>
 <body>
 
+<!-- HEADER -->
+<header>
+    <a class="title" href="index.html">Game Programmer<br>Portfolio</a>
+    <nav>
+        <a href="index.html#about">ABOUT</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="project-name">
+    <h2>8 Ball Pool</h2>
+    <div class="container">
+        <dic>
+            <iframe src="https://www.youtube.com/embed/GV8ogcvkD-g?autopause=0" width="550" height="309"></iframe>
+        </dic>
+        <div class="text">
+            <p>기간: </p>
+            <p>개발 엔진: Unity</p>
+            <p>장르: </p>
+            <p>플랫폼: Windows</p>
+            <p>인원: 1명</p>
+            <p>개요: </p>
+            <a href="https://github.com/kyw04/randomDungeon" target="_blank"><img class="about-linked-img"
+                                                                                  src="img/github.png" alt="github"></a>
+            <a href="https://drive.google.com/file/d/1rcHndR9FSiW7nfUBYQaEvbF4KxSZeF11/view?usp=drive_link"
+               target="_blank"><img class="about-linked-img" src="img/download.png" alt="build-download"></a>
+        </div>
+    </div>
+</section>
+<div class="line"></div>
+
+<section>
+    <h3 class="text">다이어그램</h3>
+    <img class="sub-img" src="img/8_ball_pool/diagram.png" alt="diagram">
+</section>
+<div class="line"></div>
+
+<section>
+    <ul class="text">
+        <li>
+            <h3>기능</h3>
+            <p>Mirror를 사용해 멀티 플레이를 개발 해 내부 IP에서 멀티플레이가 가능하게 되었습니다.</p>
+            <p>P2P방식에서 외부 IP와 멀티플레이를 하려면 포트포워딩을 해야한다는 것을 알고 시도해 보았지만 실패하여 찾아보던 중 유니티에서 공식적으로 지원하는 Netcode를 알게 되었고
+                Netcode를 사용해 P2P방식에서 Relay 방식으로 넘어와 개발하게 되었습니다.</p>
+        </li>
+        <li>
+            <h3>문제점</h3>
+            <p>서버에서 관리해야 하는 변수들이 클라이언트 따로 서버 따로 적용되는 문제가 있었습니다.</p>
+            <p>당구공이 튕기지 않고 미끄러지는 문제가 발생했습니다.</p>
+            <p>서버와 클라이언트에 당구공의 위치가 다르게 나오는 문제가 있었습니다.</p>
+        </li>
+        <li>
+            <h3>해결 방안</h3>
+            <p>처음엔 클라이언트에서도 동일하게 변수를 수정하려고 하였지만 Netcode에 NetworkVariable을 사용해 서버에서 관리하는게 편리하다는 것을 알게 되었고 RPC 함수를 만들어
+                서버에서
+                수정할 수 있게 하여 문제를 해결하였습니다.</p>
+            <p>Physic Material을 사용해 문제를 해결하려고 하였지만 어떻게 하여도 실제와 너무 다르게 튕기지 않는 문제가 있었습니다. 실제 당구공이 당구대에서 어떻게 움직이는지 알아보고 코드로
+                당구공의 움직임을 제어해 문제를 해결하였습니다.</p>
+            <p> NetworkObject를 사용해 서버와 클라이언트 당구공의 위치를 동기화 하였습니다.</p>
+        </li>
+    </ul>
+</section>
+<div class="line"></div>
+
+<section>
+    <div class="gif-container">
+        <img class="in-game-img" src="img/test.png" alt="test">
+        <img class="in-game-img" src="img/test.png" alt="test">
+    </div>
+</section>
+<div class="line"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+    <ul class="contact-link">
+        <li><a href="https://github.com/kyw04" target="_blank">github.com/kyw04</a></li>
+        <li><a href="#contact" id="email" onclick="CopyEmail()">dddd93768@gmail.com</a></li>
+    </ul>
+</section>
 </body>
 </html>
