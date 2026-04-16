@@ -31,27 +31,6 @@
     padding-top: 5px;
 }
 
-#linked-images
-{
-    width: 150px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-linked-img
-{
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-}
-
-.about-linked-img:hover
-{
-    transform: scale(1.3);
-}
-
 /* SKILLS */
 #skills ul
 {
