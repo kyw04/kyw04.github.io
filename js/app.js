@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () =>
     {
         parent.addEventListener('click', function (event)
         {
-            const explanation = parent.querySelector('.tail');
+            const explanation = parent.querySelector('.ability');
             const img = parent.querySelector('.pin');
 
             if (explanation && img)
