@@ -1,88 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Reminiscence</title>
-  <link rel="stylesheet" href="css/project.css">
-  <link rel="stylesheet" href="css/default.css">
-  <script src="js/app.js"></script>
+    <meta charset="UTF-8">
+    <title>Reminiscence</title>
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/default.css">
+    <script src="js/app.js"></script>
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
-  <a class="title" href="index.html">Game Programmer<br>Portfolio</a>
-  <nav>
-    <a href="index.html#about">ABOUT</a>
-    <a href="index.html#projects">Projects</a>
-    <a href="index.html#contact">Contact</a>
-  </nav>
+    <a class="title" href="index.html">Game Programmer<br>Portfolio</a>
+    <nav>
+        <a href="index.html#about">ABOUT</a>
+        <a href="index.html#skills">SKILLS</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
 </header>
 
 <section id="project-name">
-  <h2>Reminiscence</h2>
-  <div class="container">
-    <dic>
-      <iframe src="https://www.youtube.com/embed/OuPKRRZI6ak?autopause=0" width="550" height="309"></iframe>
-    </dic>
-    <div class="text">
-      <p>기간: 2023.10 ~ 2023.12</p>
-      <p>개발 엔진: Unity</p>
-      <p>장르: 3D 퍼즐 액션</p>
-      <p>플랫폼: PC (Windows)</p>
-      <p>인원: 11명</p>
-      <p>개요: 상황에 맞게 퍼즐을 맞춰 적에게 공격하는 게임</p>
-      <p>역할: 메인 퍼즐 시스템 개발 및 유니티 인스펙터 수정</p>
-      <p></p>
-      <a href="https://github.com/kyw04/Reminiscence" target="_blank"><img class="about-linked-img" src="img/github.png" alt="github"></a>
-      <a href="https://drive.google.com/file/d/1gtCUtbmmJX-ZtCyo4PxVj59PJti55det/view?usp=drive_link" target="_blank"><img class="about-linked-img" src="img/download.png" alt="build-download"></a>
+    <h2>Reminiscence</h2>
+    <div class="container">
+        <dic>
+            <iframe src="https://www.youtube.com/embed/OuPKRRZI6ak?autopause=0" width="550" height="309"></iframe>
+        </dic>
+        <div class="text">
+            <p>기간: 2023.10 ~ 2023.12</p>
+            <p>개발 엔진: Unity</p>
+            <p>장르: 3D 퍼즐 액션</p>
+            <p>플랫폼: PC (Windows)</p>
+            <p>인원: 11명</p>
+            <p>개요: 상황에 맞게 퍼즐을 맞춰 적에게 공격하는 게임</p>
+            <p>역할: 메인 퍼즐 시스템 개발 및 유니티 인스펙터 수정</p>
+            <p></p>
+            <a href="https://github.com/kyw04/Reminiscence" target="_blank"><img class="about-linked-img"
+                                                                                 src="img/github.png" alt="github"></a>
+            <a href="https://drive.google.com/file/d/1gtCUtbmmJX-ZtCyo4PxVj59PJti55det/view?usp=drive_link"
+               target="_blank"><img class="about-linked-img" src="img/download.png" alt="build-download"></a>
+        </div>
     </div>
-  </div>
 </section>
 <div class="line"></div>
 
 <section>
-  <h3 class="text">순서도</h3>
-  <img class="sub-img" src="img/reminiscence/diagram.png" alt="diagram">
+    <h3 class="text">순서도</h3>
+    <img class="sub-img" src="img/reminiscence/diagram.png" alt="diagram">
 </section>
 <div class="line"></div>
 
 <section>
-  <ul class="text">
-    <li>
-      <h3>기능</h3>
-      <p>Player와 Enemy 클래스에 비슷한 부분이 많아 EntityBase 부모 클래스를 만들어 구현하였습니다</p>
-      <p>패턴을 확인할 때 같은 노드를 반복해서 체크해 리스트는 맞지 않다고 생각했고 HashSet을 활용하여 퍼즐안 노드에 반복적으로 접근하는 비용을 줄였습니다.</p>
-      <p>인게임 내 3D 퍼즐에 접근하기 위해서 Raycast를 사용하여 퍼즐에 접근할 수 있게 하였습니다.</p>
-    </li>
-    <li>
-      <h3>문제점</h3>
-      <p>깃허브를 관리하기 위해 각자의 브랜치를 만들어 작업을 하였는데 모두 같은 씬을 사용해 각자의 코드를 합칠 때 충돌하는 문제가 발생하였습니다.</p>
-      <p>인스펙터에서 보이는 퍼즐 패턴이 직관적이지 않아 퍼즐 패턴을 만들기 불편했습니다.</p>
-    </li>
-    <li>
-      <h3>해결 방안</h3>
-      <p>테스트 씬을 만들어 테스트 씬에서 각자 코드를 테스트 하고 비워 두는 방식으로 충돌을 최소화 하였고 테스트 브런치를 만들어 마지막으로 최종 정검을 해 문제를 해결 할 수 있었습니다.</p>
-      <p>OnInspectorGUI 함수를 사용해 유니티 인스펙터를 더욱 직관적이게 편집해 문제를 해결하였습니다.</p>
-    </li>
-  </ul>
+    <ul class="text">
+        <li>
+            <h3>기능</h3>
+            <p>Player와 Enemy 클래스에 비슷한 부분이 많아 EntityBase 부모 클래스를 만들어 구현하였습니다</p>
+            <p>패턴을 확인할 때 같은 노드를 반복해서 체크해 리스트는 맞지 않다고 생각했고 HashSet을 활용하여 퍼즐안 노드에 반복적으로 접근하는 비용을 줄였습니다.</p>
+            <p>인게임 내 3D 퍼즐에 접근하기 위해서 Raycast를 사용하여 퍼즐에 접근할 수 있게 하였습니다.</p>
+        </li>
+        <li>
+            <h3>문제점</h3>
+            <p>깃허브를 관리하기 위해 각자의 브랜치를 만들어 작업을 하였는데 모두 같은 씬을 사용해 각자의 코드를 합칠 때 충돌하는 문제가 발생하였습니다.</p>
+            <p>인스펙터에서 보이는 퍼즐 패턴이 직관적이지 않아 퍼즐 패턴을 만들기 불편했습니다.</p>
+        </li>
+        <li>
+            <h3>해결 방안</h3>
+            <p>테스트 씬을 만들어 테스트 씬에서 각자 코드를 테스트 하고 비워 두는 방식으로 충돌을 최소화 하였고 테스트 브런치를 만들어 마지막으로 최종 정검을 해 문제를 해결 할 수 있었습니다.</p>
+            <p>OnInspectorGUI 함수를 사용해 유니티 인스펙터를 더욱 직관적이게 편집해 문제를 해결하였습니다.</p>
+        </li>
+    </ul>
 </section>
 <div class="line"></div>
 
 <section>
-  <div class="gif-container">
-    <img class="in-game-img" src="img/reminiscence/inspector-before.png" alt="inspector-before">
-    <img class="in-game-img" src="img/reminiscence/inspector-after.png" alt="inspector-after">
-  </div>
+    <div class="gif-container">
+        <img class="in-game-img" src="img/reminiscence/inspector-before.png" alt="inspector-before">
+        <img class="in-game-img" src="img/reminiscence/inspector-after.png" alt="inspector-after">
+    </div>
 </section>
 <div class="line"></div>
 
 <!-- CONTACT -->
 <section id="contact">
-  <ul class="contact-link">
-    <li><a href="https://github.com/kyw04" target="_blank">github.com/kyw04</a></li>
-    <li><a href="#contact" id="email" onclick="CopyEmail()">dddd93768@gmail.com</a></li>
-  </ul>
+    <div class="container">
+        <nav>
+            <a href="index.html#about">ABOUT</a>
+            <a href="index.html#skills">SKILLS</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        <ul class="contact-link">
+            <li><a href="https://github.com/kyw04" target="_blank">github.com/kyw04</a></li>
+            <li><a href="#contact" id="email" onclick="CopyEmail()">dddd93768@gmail.com</a></li>
+        </ul>
+    </div>
 </section>
 </body>
 </html>

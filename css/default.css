@@ -78,18 +78,19 @@ h2
 /* CONTACT */
 .contact
 {
-    text-align: center;
 }
 
 .contact-link
 {
-    text-align: center;
+    margin-left: auto;
+    text-align: right;
     list-style: none;
 }
 
 .contact-link li
 {
-    padding: 5px;
+    margin-top: 20px;
+    margin: 0 15px;
     text-decoration: underline;
 }
 
@@ -97,6 +98,9 @@ h2
 {
     color: black;
 }
+
+
+
 
 #linked-images
 {
